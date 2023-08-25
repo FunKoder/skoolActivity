@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DOM method</title>
+	<link rel="stylesheet" type="text/css" href="by1.css">
+</head>
+<body>
+	<div class="block">
+		<h1>getElementById</h1>
+		<h2>Click button change link</h2>
+		<button onclick="cl()">Change link</button>
+		<a id="l1" href="https://www.youtube.com/">Youtube</a>
+	</div>
+	
+	<div class="block">
+		<h1>getElementbyClassname</h1>
+		<h2>Click button complete texts</h2>
+		<button onclick="ct()">Change text</button>
+		<div class="l2">
+			<p class="l2.1">F</p>
+			<p class="l2.1">T</p>
+			<p class="l2.1">I</p>
+		</div>
+	</div>
+	
+	<div class="block">
+		<h1>getElementByTag</h1>
+		<h2>Click button to change text colors</h2>
+		<button onclick="cb()">Change text colors</button>
+		<h3>Red</h3>
+		<h3>Blue</h3>
+		<h3>yellow</h3>
+	</div>
+
+	<div class="block">
+		<h1>GetQuerySelector</h1>
+		<h2>Click button to change background</h2>
+		<button onclick="cg()">Change background</button>
+	</div>
+	
+	
+</body>
+<script type="text/javascript">
+	function cl(){
+		const link1 = document.getElementById("l1");
+		link1.href = "https://www.google.com/";
+		link1.style.textDecoration = "none";
+		link1.innerHTML = "Google";
+	}
+
+	function ct() {
+	  const list = document.getElementsByClassName("l2")[0];
+	  list.getElementsByClassName("l2.1")[0].innerHTML = "Facebook";
+	  list.getElementsByClassName("l2.1")[1].innerHTML = "Twitter";
+	  list.getElementsByClassName("l2.1")[2].innerHTML = "Instagram";
+	}
+
+	function cb(){
+		const col = document.getElementsByTagName("h3");
+		col[0].style.color = "Red";
+		col[1].style.color = "Blue";
+		col[2].style.color = "Yellow";
+	}
+
+	function cg(){
+		const back = document.querySelector("body");
+		back.style.backgroundColor = "#272727";
+	}
+</script>
+</html>
