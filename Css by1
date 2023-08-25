@@ -1,0 +1,29 @@
+body{
+	font-family: sans-serif;
+	text-align: center;
+	background-color: #6F2DBD;
+}
+button{
+	padding: 5px;
+	background-color: #CCC9E7;
+	border: none;
+	border-radius: 5px;
+	box-shadow: 2px 2px 7px #2D3142;
+}
+h1, h2,h3, p{
+	color: white;
+}
+a{
+	margin: 15px;
+	color: #251351; 
+	font-weight: bold;
+	font-size: 20px;
+}
+.block{
+	margin-left: 35%;
+	margin-top: 15px;
+	padding: 8px;
+	background-color: #A663CC;
+	width: 500px;
+	border-radius: 15px;
+}
